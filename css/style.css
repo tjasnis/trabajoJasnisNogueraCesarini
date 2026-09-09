@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background-image: url("../img/fondo-remeras-retro-claro.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+header{
+    background-color:rgb(184, 176, 143)
+}
+
+.logo{
+    width: 15%;
+    
+}
+.div_h1{
+    display: flex;
+    justify-content: center;
+}
+.div_logo{
+    display: flex;
+    justify-content: center ;
+}
+
+
+
+
+
+
+
