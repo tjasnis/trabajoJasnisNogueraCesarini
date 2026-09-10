@@ -31,9 +31,47 @@ header{
     justify-content: center ;
 }
 
+.seccion_aleatorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productos_aleatorios{
+    width: 18%;
+    height: 500x;
+    margin: 20px 5px;
+    
+    
+
+}
+
+
+
+.fotos_productos{
+    width: 100%;
+    height: 300px;
+}
+
+.seccion_mas_vendidos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.productos_mas_vendidos{
+    width: 18%;
+    height: 500x;
+    margin: 5px;
+
+}
 
 
 
 
-
-
+main{
+    display: flex;
+}
+aside{
+    width:100%;
+    background-color: rgb(122, 122, 122);
+}
