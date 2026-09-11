@@ -26,9 +26,11 @@ header{
     display: flex;
     justify-content: center;
 }
-.div_logo{
+.div_logo a{
     display: flex;
     justify-content: center ;
+    align-items: center;
+    width: 100%;
 }
 
 .seccion_aleatorias{
@@ -74,4 +76,15 @@ main{
 aside{
     width:100%;
     background-color: rgb(122, 122, 122);
+}
+.login{
+display: flex;
+justify-content: flex-end;
+margin: 5px;
+
+}
+.registro {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
 }
