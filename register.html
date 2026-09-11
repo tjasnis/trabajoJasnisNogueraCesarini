@@ -7,30 +7,48 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
+<header>
+    <div class="login_y_registro">
+        <a href="login.html" class="login">Login</a>
+        <span class="login">|</span>
+        <a href="register.html" class="registro" >Registrate</a>
+    </div>
+    <div class="div_logo">
+        <a href="./index.html">
+            <img class="logo" src="./img/logo.png" alt="logo">
+        </a>
+        <form class="buscador" action="./search-results.html" method="GET">
+            <input class="input_buscador" type="text" name="query" placeholder="Buscar productos..." required>
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+</header>
 <body>
-    <form action="./login.html" method="get">
-<div><label for="email">Email: </label>
-<input type="email" name="email" value=""></div>
-<div>
-    <label for="contraseña">Contraseña: </label>
-<input type="contraseña" name="contraseña" value="">
-</div>
-<div class="campo">
-        <label for="confirmPassword">Repetir contraseña:</label>
-        <input type="password" required> </div>
-<div>
-<button type="submit">Registrarme</button>
-</div>
-<div><label for="terminos">Términos y condiciones</label>
-<input type="checkbox" name="terminos" value="Acepto"> Acepto
-<input type="checkbox" name="terminos" value="No acepto"> No acepto
-</div>
-<div>
-    <a href="./login.html">Ya tengo cuenta</a>
-</div>
+    <div class="contenedor_register">
+    <form class="form_register" action="./login.html" method="get">
+        <div>
+            <div><label>Email: </label></div>
+            <input type="email" name="email" value="" placeholder="ejemplo@algo.com"></div>
+        <div>
+            <div><label>Contraseña: </label></div>
+            <input type="contraseña" name="contraseña" value="" placeholder="contraseña">
+        </div>
+        <div class="campo">
+            <div><label for="confirmPassword">Repetir contraseña:</label></div>
+            <input type="password" required placeholder="contraseña"> </div>
 
-
-
-</form>
+        <div>
+            <div><label>Términos y condiciones</label></div>
+            <input type="checkbox" name="terminos" value="Acepto"> Acepto
+            <input type="checkbox" name="terminos" value="No acepto"> No acepto
+        </div>
+        <div>
+            <button type="submit">Registrarme</button>
+        </div>
+        <div>
+            <a href="./login.html">Ya tengo cuenta</a>
+        </div>
+    </form>
+    </div>
 </body>
 </html>

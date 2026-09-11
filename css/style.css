@@ -20,17 +20,34 @@ header{
 }
 
 .logo{
-    width: 15%;
+    width: 100%;
+    margin: 0 0 15px 0;
+    padding: 0;
 }
 .div_h1{
     display: flex;
     justify-content: center;
 }
-.div_logo a{
+.div_logo{
     display: flex;
-    justify-content: center ;
+    justify-content: flex-start ;
     align-items: center;
     width: 100%;
+}
+.div_logo a{
+    padding: 0;
+    width: 20%;
+
+}
+.div_logo form{
+    margin: 0 0 0 300px;
+    width: 20%;
+    
+}
+.input_buscador{
+    width: 70%;
+    height: 30px;
+    border-radius: 10%;
 }
 
 .seccion_aleatorias{
@@ -66,7 +83,11 @@ header{
     margin: 5px;
 
 }
-
+.ver_detalle{
+    background-color: rgb(128, 128, 128);
+    color: rgb(178, 177, 177);
+    padding: 3px;
+}
 
 
 
@@ -77,14 +98,40 @@ aside{
     width:100%;
     background-color: rgb(122, 122, 122);
 }
-.login{
-display: flex;
-justify-content: flex-end;
-margin: 5px;
-
-}
-.registro {
+.login_y_registro{
     display: flex;
     justify-content: flex-end;
+
+}
+.login{
     margin: 5px;
+}
+.registro{
+    margin: 5px;
+}
+
+.contenedor_login{
+    display: flex;
+    justify-content: center;
+
+
+}
+.form_login{
+    background-color: rgb(136, 143, 107);
+    width: 30%  ;
+    height: 200px;
+}
+
+
+.contenedor_register{
+    display: flex;
+    justify-content: center;
+
+}
+.form_register{
+    background-color:rgb(136, 143, 107) ;
+    width: 30%;
+    height: 300px;
+
+
 }

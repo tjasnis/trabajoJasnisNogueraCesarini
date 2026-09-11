@@ -6,20 +6,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-               <form action="./index.html" method="get">
-<div><label for="email">Email: </label>
-<input type="email" name="email" value=""></div>
-<div>
-    <label for="contraseña">Contraseña: </label>
-<input type="contraseña" name="contraseña" value="">
-</div>
-<div>
-<button type="submit">Ingresar</button>
-<a href="./register.html">No tengo cuenta</a>
-</div>
-
+<header>
+        <div class="login_y_registro">
+            <a href="login.html" class="login">Login</a>
+            <span class="login">|</span>
+            <a href="register.html" class="registro" >Registrate</a>
+        </div>
+        <div class="div_logo">
+            <a href="./index.html">
+                <img class="logo" src="./img/logo.png" alt="logo">
+            </a>
+            <form class="buscador" action="./search-results.html" method="GET">
+                <input class="input_buscador" type="text" name="query" placeholder="Buscar productos..." required>
+                <button type="submit">Buscar</button>
             </form>
+        </div>
+</header>
+<body>
+    <div class="contenedor_login">
+        <form class="form_login" action="./index.html" method="get">
+            <div>
+                <div><label for="email">Email: </label></div>
+                <input class="input_login" type="email" name="email" value="" placeholder="ejemplo@algo.com" required>
+            </div>
+        |   <div>
+                <div><label for="contraseña">Contraseña: </label></div>
+                <input class="input_login" type="contraseña" name="contraseña" value="" placeholder="contraseña" required>
+            </div>
+            <div>
+                <button type="submit">Ingresar</button>
+                <a href="./register.html">No tengo cuenta</a>
+            </div>
+
+        </form>
     </div>
+<footer></footer>
+    
 </body>
 </html>
