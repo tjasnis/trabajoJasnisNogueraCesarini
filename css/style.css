@@ -135,3 +135,23 @@ aside{
 
 
 }
+.redes{
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+.integrantes{
+    display: flex;
+    justify-content: flex-end;
+}
+footer{
+    
+    border-top: 2px solid lightgrey;
+    border-width: 100%;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+.icono-red{
+    width: 20px;
+    height: 20px;
+}
