@@ -58,7 +58,7 @@ header{
 
 .productos_aleatorios{
     width: 18%;
-    height: 500x;
+    height: 500px;
     margin: 20px 5px;
     
     
@@ -79,7 +79,7 @@ header{
 }
 .productos_mas_vendidos{
     width: 18%;
-    height: 500x;
+    height: 500px;
     margin: 5px;
 
 }
@@ -146,9 +146,10 @@ main{
 footer{
     
     border-top: 2px solid #e2b04c;
-    border-width: 100%;
+    border-width: 1px;
     padding-top: 15px;
     margin-top: 20px;
+    width: 100%;
 }
 .icono-red{
     width: 20px;
