@@ -87,6 +87,7 @@ header{
     background-color: rgb(128, 128, 128);
     color: rgb(178, 177, 177);
     padding: 3px;
+    display: inline-block;
 }
 
 
@@ -158,6 +159,7 @@ aside {
     background-color: #2b2b2b ;
     padding: 15px 10px;
     border-radius: 8px; 
+    margin-right: 20px;
 }
 aside h3 {
     color: white;
