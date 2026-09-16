@@ -14,6 +14,7 @@ a{
 body{
     background-image: url("../img/fondo-remeras-retro-claro.png");
     background-position: right;
+    font-family:  'Montserrat', sans-serif;
 }
 header{
     background-color:rgb(184, 176, 143)
@@ -70,6 +71,7 @@ header{
 .fotos_productos{
     width: 100%;
     height: 250px;
+    border-radius: 10px;
 }
 
 .seccion_mas_vendidos{
@@ -84,10 +86,14 @@ header{
 
 }
 .ver_detalle{
-    background-color: rgb(128, 128, 128);
-    color: rgb(178, 177, 177);
+    background-color: #20252a;
+    color: #d4b15c;
     padding: 3px;
     display: inline-block;
+    font-size: medium;
+    font-weight: 500;
+    border-radius:8px;
+    padding: 8px 20px;
 }
 
 
@@ -191,3 +197,12 @@ aside a {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+article p{
+    font-size: small;
+}
+.precio{
+    font-size: large;
+    font-weight: bold;
+}
+
