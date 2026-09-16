@@ -69,7 +69,7 @@ header{
 
 .fotos_productos{
     width: 100%;
-    height: 300px;
+    height: 250px;
 }
 
 .seccion_mas_vendidos{
@@ -181,4 +181,10 @@ aside a {
     text-decoration: none;
     font-weight: 500;
     border-radius: 5px;
+}
+
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
