@@ -204,7 +204,21 @@ article p{
     font-weight: bold;
 }
 
-
+.reviews-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.ultima{
+    font-weight: bold;
+}
+.remera{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
 @media(max-width:480px){
     body{
         background-image: none;
