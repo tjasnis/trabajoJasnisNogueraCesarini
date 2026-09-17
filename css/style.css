@@ -219,6 +219,9 @@ article p{
     width: 100%;
     height: auto;
 }
+.messi{
+    font-weight: bold;
+}
 @media(max-width:480px){
     body{
         background-image: none;
