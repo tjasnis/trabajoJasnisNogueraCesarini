@@ -20,33 +20,26 @@ header{
     background-color:rgb(184, 176, 143);
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .logo{
     width: 100%;
-    margin: 0 0 15px 0;
-    padding: 0;
+
 }
 .div_logo{
+    width: 20%;
+}
+
+
+
+.buscador{
     display: flex;
-    justify-content: flex-start ;
-    align-items: center;
-    width: 100%;
 }
-.div_logo a{
-    padding: 0;
-    width: 20%;
-
-}
-.div_logo form{
-    margin: auto;
-    width: 20%;
-    
-}
-
-
 .input_buscador{
-    width: 80%;
+    width: 400px;
     height: 40px;
     border-radius: 20px;
     border: 1px solid transparent;
@@ -58,10 +51,19 @@ header{
     width:15% ;
     height: 40px;
     border: 1px solid transparent;
-    
-
 
 }
+.login_y_registro{
+    align-self: flex-start;
+
+}
+.login{
+    margin: 5px;
+}
+.registro{
+    margin: 5px;
+}
+
 
 .seccion_aleatorias{
     display: flex;
@@ -116,20 +118,7 @@ main{
 }
 
 
-.login_y_registro{
-    display: flex;
-    justify-content: flex-end;
-    align-self: flex-end;
 
-}
-.login{
-    margin: 5px;
-    align-self: flex-end;
-}
-.registro{
-    margin: 5px;
-    align-self: flex-end;
-}
 
 .contenedor_login{
     display: flex;
@@ -141,6 +130,7 @@ main{
     background-color: rgb(136, 143, 107);
     width: 30%  ;
     height: 200px;
+    border-radius: 10px;
 }
 
 
@@ -153,6 +143,7 @@ main{
     background-color:rgb(136, 143, 107) ;
     width: 30%;
     height: 300px;
+    border-radius: 10px;
 
 
 }
