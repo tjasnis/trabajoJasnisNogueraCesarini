@@ -19,6 +19,7 @@ body{
 header{
     background-color:rgb(184, 176, 143);
     width: 100%;
+    display: flex;
 }
 
 .logo{
@@ -118,13 +119,16 @@ main{
 .login_y_registro{
     display: flex;
     justify-content: flex-end;
+    align-self: flex-end;
 
 }
 .login{
     margin: 5px;
+    align-self: flex-end;
 }
 .registro{
     margin: 5px;
+    align-self: flex-end;
 }
 
 .contenedor_login{
