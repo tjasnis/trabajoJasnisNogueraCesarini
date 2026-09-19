@@ -253,6 +253,15 @@ article p{
     padding: 5px;
     color: #afaba1;
 }
+.sin_resultados {
+    border: 1px solid #ffeeba; 
+    background-color: #fff3cd; 
+    color: #856404; 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-top: 20px;
+    text-align: center;
+}
 @media(max-width:480px){
     body{
         background-image: none;
