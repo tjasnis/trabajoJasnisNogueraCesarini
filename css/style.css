@@ -218,6 +218,7 @@ article p{
     padding: 20px;
     border-radius: 8px;
     background-color: rgb(229, 226, 222);
+    max-height: fit-content;
 }
 .ultima{
     font-weight: bold;
