@@ -3,56 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Offside Store</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
-        <header>
-        <div class="login_y_registro">
-            <a href="login.html" class="login">Login</a>
-            <span class="login">|</span>
-            <a href="register.html" class="registro" >Registrate</a>
-        </div>
+    <header>
+
         <div class="div_logo">
             <a href="./index.html">
                 <img class="logo" src="./img/logo.png" alt="logo">
             </a>
-            <form class="buscador" action="./search-results.html" method="GET">
-                <input class="input_buscador" type="text" name="buscador" placeholder="Buscar productos..." required>
-                <button type="submit">Buscar</button>
-            </form>
         </div>
+        <form class="buscador" action="./search-results.html" method="GET">
+            <input class="input_buscador" type="text" name="buscador" placeholder=" ⌕   Buscar productos...  " required>
+            <button class="boton_buscador" type="submit"> ⌕</button>
+        </form>
+        <nav class="login_y_registro">
+            <a href="login.html" class="login">Login</a>
+            <span class="login">|</span>
+            <a href="register.html" class="registro" >Registrate</a>
+        </nav>
     </header>
-    <article class="productos_aleatorios">
-         <a class="link_fotos_productos" href="./product.html">
-             <img class="fotos_productos" src="./img/productos-aleatorios/chacarita.jpg" alt="Camiseta Chacarita 2026">
-        </a>
-        <div class="remera">
-             <h3>Remera Chacarita 2026</h3>
-                <p>Camiseta retro de Chacarita Juniors con el clásico diseño a rayas verticales. Prenda emblemática del club, perfecta para coleccionistas de fútbol argentino.</p>
-                <p class="precio">$80.000</p>
-                <p class="ultima">¡Última unidad!</p>
-        <ul class="ultima">
-            <li>Equipación: Titular </li>
-            <li>Versión: Jugador </li>
-            <li>Temporada: 2026</li> </ul>
-        <section class="reviews-section">
-            <h2>Reseñas de Usuarios</h2>
-        <article>
-            <div>
-            <span>★★★★★</span>
-            <span></span>(5/5)</span>
+    <main>
+        <aside class="sidebar-categorias">
+            <h3>Categorías</h3>
+            <nav>  
+                <ul>
+                    <li><a href="category.html">Artículos aleatorios</a></li>
+                    <li><a href="category.html">Productos más vendidos</a></li>
+                    <li><a href="category.html">Selecciones</a></li>
+                    <li><a href="category.html">Clubes europeos</a></li>
+                    <li><a href="category.html">Futbol argentino</a></li>
+                    <li><a href="category.html">Liga Española</a></li>
+                    <li><a href="category.html">Liga Inglesa</a></li>
+                    <li><a href="category.html">Liga Holandesa</a></li>
+                    <li><a href="category.html">Liga Alemana</a></li>
+                    <li><a href="category.html">Liga Francesa</a></li>
+                    <li><a href="category.html">Liga Italiana</a></li>
+                    <li><a href="category.html">Liga Argentina</a></li>
+                    <li><a href="category.html">Liga Brasilera</a></li>
+                    <li><a href="category.html">Selecciones 1990'</a></li>
+                    <li><a href="category.html">Selecciones 2000'</a></li>
+                    <li><a href="category.html">Selecciones 2010'</a></li>
+                    <li><a href="category.html">Selecciones 2020'</a></li>
+                    <li><a href="category.html">Equipos 1990'</a></li>
+                    <li><a href="category.html">Equipos 2000'</a></li>
+                    <li><a href="category.html">Equipos 2010'</a></li>
+                    <li><a href="category.html">Equipos 2020'</a></li>
+                    <li><a href="category.html">Talle S</a></li>
+                    <li><a href="category.html">Talle M</a></li>
+                    <li><a href="category.html">Talle L</a></li>
+                    <li><a href="category.html">Talle XL</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+        <section class="producto_y_reseñas">
+            <article class="producto_unico">
+                <a class="link_fotos_productos" href="./product.html">
+                    <img class="fotos_productos" src="./img/productos-aleatorios/chacarita.jpg" alt="Camiseta Chacarita 2026">
+                </a>
+                <div class="remera">
+                    <h3>Remera Chacarita 2026</h3>
+                        <p>Camiseta retro de Chacarita Juniors con el clásico diseño a rayas verticales. Prenda emblemática del club, perfecta para coleccionistas de fútbol argentino.</p>
+                        <p class="precio">$80.000</p>
+                        <p class="ultima">¡Última unidad!</p>
+                <ul class="desc_remera">
+                    <li>Equipación: Titular </li>
+                    <li>Versión: Jugador </li>
+                    <li>Temporada: 2026</li> </ul>
+            
+                    
+            </article>
+            <div class="reseñas_seccion">
+                <h2>Reseñas de Usuarios</h2>
+                <div class="reseña">               
+                    <p>★★★★★ (5/5)<p>                   
+                    <p class="usuario_reseña"> "Lionel Messi 18/12/2022" :</p>
+                    <p> "Muy satisfecho con la compra. Llegó rápido y en perfectas condiciones."</p>
+                </div>    
+                <div class="reseña">               
+                    <p>★★★★★ (5/5)<p>                   
+                    <p class="usuario_reseña"> "Cristian Romero 29/12/2023" : </p>
+                    <p> "Muy feliz con la compra. Llegó rápido y en perfectas condiciones. Hermosa casaca"</p>
+                </div> 
+                 <div class="reseña">               
+                    <p>★★★★★ (5/5)<p>                   
+                    <p class="usuario_reseña"> "Mariana Gonzales 21/3/2026" : </p>
+                    <p> "Me encanto la remera,se la regale a mi hijo para el cumple y esta encantado"</p>
+                </div> 
+                    
+                    
             </div>
-            <p class="messi"> "Lionel Messi <span>18/12/2022" : </span></p>
-            <p>
-                "Muy satisfecho con la compra. Llegó rápido y en perfectas condiciones."
-            </p>
-  </article>
-</section>
-</div>
-    </article>
+        </section>
+    </main>
 
 
 
