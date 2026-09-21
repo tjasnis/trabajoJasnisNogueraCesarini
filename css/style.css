@@ -75,12 +75,15 @@ header{
     width: 18%;
     height: 500px;
     margin: 20px 5px;
+    background-color: rgb(212, 213, 190) ;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(114, 111, 111);
 
     
     
     
 }
-
 
 
 .fotos_productos{
@@ -98,6 +101,10 @@ header{
     width: 18%;
     height: 500px;
     margin: 5px;
+        background-color: rgb(212, 213, 190) ;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(114, 111, 111);
 
 }
 .ver_detalle{
@@ -157,7 +164,7 @@ main{
     justify-content: flex-end;
 }
 footer{
-    
+    background-color:rgb(184, 176, 143);
     border-top: 2px solid #e2b04c;
     border-width: 1px;
     padding-top: 15px;
@@ -172,8 +179,8 @@ aside {
     width: 200px;
     background-color: #2b2b2b ;
     padding: 15px 10px;
-    border-radius: 8px; 
-    margin-right: 20px;
+    border-radius: 0px 8px 8px 0px; 
+    margin-right: 0px;
 }
 aside h3 {
     color: white;
@@ -243,8 +250,13 @@ article p{
 }
 .producto_unico{
     width: 30%;
-    height: 800px;
+    height: 500px;
     margin: 20px 5px;
+            background-color: rgb(212, 213, 190) ;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(114, 111, 111);
+
 
 }
 .reseña{
