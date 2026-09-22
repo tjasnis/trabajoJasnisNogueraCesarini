@@ -134,10 +134,18 @@ main{
 
 }
 .form_login{
-    background-color: rgb(136, 143, 107);
+    background-color: rgb(144, 148, 135);
     width: 30%  ;
     height: 200px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(113, 113, 113);
+    margin-top: 10px;
+}
+form h2{
+    text-decoration: underline;
 }
 
 
@@ -147,12 +155,34 @@ main{
 
 }
 .form_register{
-    background-color:rgb(136, 143, 107) ;
+    background-color:rgb(233, 236, 221) ;
     width: 30%;
     height: 300px;
     border-radius: 10px;
 
 
+}
+.input_login{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 70%;
+    margin-bottom: 5px;
+    height: 25px;
+}
+.boton_login{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 7px;
+}
+.no_tengo_cuenta{
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #1d1e1e;
+    padding: 2px 7px;
+    font-size: small;
+    font-weight: 500;
 }
 .redes{
     display: flex;
@@ -283,6 +313,9 @@ article p{
     body h2{
         color: white;
     }
+    header{
+        flex-direction: column;
+    }
     .div_logo{
         width: 100%;
         display: flex;
@@ -296,6 +329,32 @@ article p{
         
         
     }
+    .login_y_registro{
+        align-self: center;
+        margin: 5px;
+
+  
+    }
+    .login{
+        background-color: #928d8d ;
+        border-radius: 4px;
+        margin: 2px;
+        color: lightgray;
+        padding: 3px;
+        font-size: bold;
+    }
+    .registro{
+        background-color: #928d8d;
+        border-radius: 4px;
+        margin: 2px;
+        color: lightgray;
+        padding: 3px;
+        font-size: bold;
+
+    }
+    span{
+        display: none;
+    }
     .input_buscador{
         margin: 0px;
         width: 100%;
@@ -308,16 +367,22 @@ article p{
     main{
         flex-direction: column;
     }
+    ul{
+        color: lightgray;
+    }
+    a{
+        color: black;
+    }
     aside{
         width: 100%;
         text-align: center;
         
     }
-    ul{
+     aside ul{
         display: flex;
         flex-wrap: wrap;
     }
-    li{
+     aside li{
         background-color: #928d8d;
         border-radius: 8px;
         margin: 2px;
@@ -378,6 +443,7 @@ article p{
         background-color: #20252a;
         color: rgb(143, 142, 142);
     }
+ 
 
 
 }
