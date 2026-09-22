@@ -64,7 +64,10 @@ header{
     margin: 5px;
 }
 
-
+.titulo_articulos{
+    margin: 5px 0px 0px 5px ;
+    text-align: center;
+}
 .seccion_aleatorias{
     display: flex;
     flex-wrap: wrap;
@@ -300,6 +303,26 @@ article p{
     border-radius: 8px;
     padding: 5px;
     color: #afaba1;
+}
+
+.form_reseñas{
+    display: flex;
+}
+
+.input_reseñas{
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+
+.boton_enviar_reseñas{
+    background-color: #20252a;
+    color: #afaba1;
+    border-radius: 10px;
+    width: 15%;
+    height: 40%;
+    border: 1px solid transparent;
 }
 .sin_resultados {
     border: 1px solid #ffeeba; 
