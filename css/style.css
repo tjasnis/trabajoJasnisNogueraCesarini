@@ -333,6 +333,8 @@ article p{
     margin-top: 20px;
     text-align: center;
 }
+
+
 @media(max-width:480px){
     body{
         background-image: none;
@@ -426,7 +428,7 @@ article p{
     .productos_aleatorios{
         width: 100%;
         padding: 20px;
-        height: 500px;
+        height: 510px;
         background-color: rgb(158, 158, 158);
         border-radius: 10px;
     }
@@ -440,7 +442,7 @@ article p{
     .productos_mas_vendidos{
         width: 100%;
         padding: 20px;
-        height: 500px;
+        height: 510px;
         background-color: rgb(158, 158, 158);
         border-radius: 10px;
     }
@@ -471,7 +473,32 @@ article p{
         background-color: #20252a;
         color: rgb(143, 142, 142);
     }
- 
 
+    .precio{
+        margin: 3px 0px 3px 0px;
+    }
+
+    .descripciones_remeras_index{
+        margin: 3px 0px 0px 0px;
+    }
+
+    .producto_y_reseñas{
+        flex-direction: column;
+    }
+
+    .producto_unico{
+        width: 100%;
+        height: auto;
+        margin: 10px 0px;
+    }
+
+    .reseñas_seccion{
+        margin: 10px 0px;
+    }
+
+    .input_reseñas{
+        width: 100%;
+    }
+    
 
 }
