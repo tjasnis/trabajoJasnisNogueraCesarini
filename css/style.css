@@ -162,11 +162,15 @@ form h2{
 
 }
 .form_register{
-    background-color:rgb(233, 236, 221) ;
-    width: 30%;
-    height: 300px;
+    background-color: rgb(144, 148, 135);
+    width: 30%  ;
+    height: 320px;
     border-radius: 10px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(113, 113, 113);
+    margin-top: 10px;
 
 }
 .input_login{
@@ -176,20 +180,49 @@ form h2{
     margin-bottom: 5px;
     height: 25px;
 }
+.input_register{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 70%;
+    margin-bottom: 5px;
+    height: 25px;
+
+}
 .boton_login{
     border: 1px solid black;
     border-radius: 5px;
     padding: 2px 7px;
 }
+.boton_register{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 7px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 .no_tengo_cuenta{
     background-color: #ffffff;
     border: 1px solid black;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
     color: #1d1e1e;
     padding: 2px 7px;
     font-size: small;
     font-weight: 500;
+}
+.ya_tengo_cuenta{
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: px;
+    color: #1d1e1e;
+    padding: 2px 7px;
+    font-size: small;
+    font-weight: 500;
+
+}
+.negrita{
+    font-weight: bold;
 }
 .redes{
     display: flex;

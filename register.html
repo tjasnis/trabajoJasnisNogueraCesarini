@@ -29,28 +29,32 @@
     </header>
     <div class="contenedor_register">
     <form class="form_register" action="./login.html" method="get">
-        <div>
-            <div><label>Email: </label></div>
-            <input type="email" name="email" value="" placeholder="ejemplo@algo.com"></div>
-        <div>
-            <div><label>Contraseña: </label></div>
-            <input type="contraseña" name="contraseña" value="" placeholder="contraseña">
-        </div>
-        <div class="campo">
-            <div><label for="confirmPassword">Repetir contraseña:</label></div>
-            <input type="password" required placeholder="contraseña"> </div>
+            <h2>Crear una cuenta</h2>
+        
+            <div><label class="negrita">Email: </label></div>
+            <input class="input_register" type="email" name="email" value="" placeholder="ejemplo@algo.com">
+        
+            <div><label  class="negrita">Contraseña: </label></div>
+            <input class="input_register" type="contraseña" name="contraseña" value="" placeholder="contraseña">
+        
+        
+            <div><label  class="negrita">Repetir contraseña:</label></div>
+            <input class="input_register" type="password"  placeholder="contraseña"required > 
 
-        <div>
-            <div><label>Términos y condiciones</label></div>
-            <input type="checkbox" name="terminos" value="Acepto"> Acepto
-            <input type="checkbox" name="terminos" value="No acepto"> No acepto
-        </div>
-        <div>
-            <button type="submit">Registrarme</button>
-        </div>
-        <div>
-            <a href="./login.html">Ya tengo cuenta</a>
-        </div>
+            <div>
+                <div><label  class="negrita">Términos y condiciones</label></div>
+                <input type="checkbox" name="terminos" value="Acepto"> 
+                <label >acepto</label>
+                <input type="checkbox" name="terminos" value="No acepto"> 
+                <label>no acepto</label>
+            </div>
+        
+        
+            <div><button class="boton_register" type="submit">Registrarme</button></div>
+        
+        
+            <div><a class="ya_tengo_cuenta" href="./login.html">Ya tengo cuenta</a></div>
+        
     </form>
     </div>
     <footer>
