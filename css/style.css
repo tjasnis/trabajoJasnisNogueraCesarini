@@ -551,6 +551,10 @@ article p{
         margin: 3px 0px 0px 0px;
     }
 
+    .desc_remera{
+        color: #1d1e1e;
+    }
+
     .producto_y_reseñas{
         flex-direction: column;
     }
