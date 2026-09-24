@@ -117,12 +117,12 @@ header{
 .ver_detalle{
     background-color: #20252a;
     color: #d4b15c;
-    padding: 3px;
     display: inline-block;
     font-size: medium;
     font-weight: 500;
     border-radius:8px;
     padding: 8px 20px;
+    margin: 5px 0px;
 }
 
 
@@ -321,15 +321,51 @@ article p{
 }
 .producto_unico{
     width: 30%;
-    height: 500px;
+    height: 600px;
     margin: 20px 5px;
             background-color: rgb(212, 213, 190) ;
     padding: 5px;
     border-radius: 8px;
     border: 1px solid rgb(114, 111, 111);
-
-
 }
+
+
+.equipacion{
+    margin: 5px 0px;
+}
+
+.version{
+    margin: 5px 0px;
+}
+
+.temporada{
+    margin: 5px 0px;
+}
+
+.marca{
+    margin: 5px 0px;
+}
+
+.categoria{
+    margin: 5px 0px;
+}
+
+.tags{
+    display: flex;
+    flex: wrap;
+    margin-top: 12px;
+}
+
+.tag{
+    background-color: #20252a;
+    color: #d4b15c;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: small;
+    font-weight: 500;
+    margin: 0px 8px 8px 0px;
+}
+
 .reseña{
     background-color: #20252a;
     margin: 10px;
