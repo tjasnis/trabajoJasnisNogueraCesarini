@@ -31,22 +31,24 @@
     <form class="form_register" action="./login.html" method="get">
             <h2>Crear una cuenta</h2>
         
-            <div><label class="negrita">Email: </label></div>
-            <input class="input_register" type="email" name="email" value="" placeholder="ejemplo@algo.com">
+            <div><label for="email_registro" class="negrita">Email: </label></div>
+            <input id="email_registro" class="input_register" type="email" name="email" value="" placeholder="ejemplo@algo.com">
         
-            <div><label  class="negrita">Contraseña: </label></div>
-            <input class="input_register" type="contraseña" name="contraseña" value="" placeholder="contraseña">
+            <div><label for="contraseña_primera_vez"  class="negrita">Contraseña: </label></div>
+            <input  id="contraseña_primera_vez"  class="input_register" type="contraseña" name="contraseña" value="" placeholder="contraseña">
         
         
-            <div><label  class="negrita">Repetir contraseña:</label></div>
-            <input class="input_register" type="password"  placeholder="contraseña"required > 
+            <div><label for="repetir_contraseña" class="negrita">Repetir contraseña:</label></div>
+            <input  id="repetir_contraseña"  class="input_register" type="password"  placeholder="contraseña"required > 
 
             <div>
-                <div><label  class="negrita">Términos y condiciones</label></div>
-                <input type="checkbox" name="terminos" value="Acepto"> 
-                <label >acepto</label>
-                <input type="checkbox" name="terminos" value="No acepto"> 
-                <label>no acepto</label>
+                <div>
+                    <label for="pregunta_terminos_y_condiciones" class="negrita">Términos y condiciones</label>
+                </div>
+                <input  id="acepto_terminos" type="checkbox" name="terminos" value="Acepto"> 
+                <label for="acepto_terminos">Acepto</label>
+                <input  id="no_acepto_terminos"  type="checkbox" name="terminos" value="No acepto"> 
+                <label  id="no_acepto_terminos">No acepto</label>
             </div>
         
         
@@ -74,9 +76,9 @@
         </div>
         <div class="integrantes">
             <ul>
-                <li>Juan Ignacio Noguera</li>
-                <li>Santiago Cesarini</li>
-                <li>Tomás Jasnis</li>
+                <li class="nombres_footer">Juan Ignacio Noguera</li>
+                <li class="nombres_footer">Santiago Cesarini</li>
+                <li class="nombres_footer">Tomás Jasnis</li>
             </ul>
         </div>
     </footer>
