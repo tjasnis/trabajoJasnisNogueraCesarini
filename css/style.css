@@ -402,7 +402,14 @@ article p{
     margin-top: 20px;
     text-align: center;
 }
+.leyenda_search{
+    background-color: #a0a891;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    margin:auto;
 
+}
 
 @media(max-width:480px){
     body{
@@ -580,4 +587,13 @@ article p{
     .titulo_reseñas_de_usuarios{
         color: black;
     }
-}
+    .h2_search{
+        color: white
+    }
+    .leyenda_search{
+        background-color:#2b2b2b;
+        color: white;
+    }
+    
+    }
+        
