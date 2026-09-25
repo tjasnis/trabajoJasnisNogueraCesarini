@@ -57,12 +57,21 @@ header{
     align-self: flex-start;
 
 }
+
+.lista_login_y_register{
+    display: flex;
+}
 .login{
     margin: 5px;
 }
 .registro{
     margin: 5px;
 }
+
+.separador_login_register{
+    color: rgb(79, 79, 203);
+}
+
 
 .titulo_articulos{
     margin: 5px 0px 0px 5px ;
@@ -390,7 +399,7 @@ article p{
     color: #afaba1;
     border-radius: 10px;
     width: 15%;
-    height: 40%;
+    height: 40px;
     border: 1px solid transparent;
 }
 .sin_resultados {

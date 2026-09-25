@@ -21,9 +21,11 @@
             <button class="boton_buscador" type="submit"> ⌕</button>
         </form>
         <nav class="login_y_registro">
-            <a href="./login.html" class="login">Login</a>
-            <span class="login">|</span>
-            <a href="./register.html" class="registro" >Registrate</a>
+            <ul class="lista_login_y_register">
+                <li><a href="./login.html" class="login">Login</a></li>
+                <li class="separador_login_register">|</li>
+                <li><a href="./register.html" class="registro" >Registrate</a></li>
+            </ul> 
         </nav>
     </header>
     <main>
@@ -104,11 +106,10 @@
                     <p class="usuario_reseña"> "Mariana Gonzales 21/3/2026" : </p>
                     <p> "Me encanto la remera,se la regale a mi hijo para el cumple y esta encantado"</p>
                 </div> 
-                <div>
-                    <form  class="form_reseñas"  action="./product.html" method="GET"></form>
+                    <form  class="form_reseñas"  action="./index.html" method="GET">
                         <input  class="input_reseñas"  type="text" name="buscador" placeholder="  ☆   Deja un comentario sobre tu producto..." required>
                         <button  class="boton_enviar_reseñas" type="submit">Envíar</button>
-                </div>
+                    </form>
                     
                     
             </div>
