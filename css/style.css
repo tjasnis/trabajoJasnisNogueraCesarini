@@ -360,7 +360,7 @@ article p{
 
 .tags{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     margin-top: 12px;
 }
 
