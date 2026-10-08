@@ -456,7 +456,7 @@ article p{
         margin: 2px;
         color: lightgray;
         padding: 3px;
-        font-size: bold;
+        font-weight: bold;
     }
     .registro{
         background-color: #928d8d;
@@ -464,7 +464,7 @@ article p{
         margin: 2px;
         color: lightgray;
         padding: 3px;
-        font-size: bold;
+        font-weight: bold;
 
     }
     span{
