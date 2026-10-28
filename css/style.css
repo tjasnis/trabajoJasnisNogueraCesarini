@@ -299,7 +299,7 @@ article p{
     margin: 8px 0px 8px 0px;
 }
 
-.reseñas_seccion {
+.resenas_seccion {
     margin-top: 30px;
     padding: 20px;
     border-radius: 8px;
@@ -319,11 +319,11 @@ article p{
     width: 100%;
     height: auto;
 }
-.usuario_reseña{
+.usuario_resena{
     font-weight: bold;
 }
 
-.producto_y_reseñas{
+.producto_y_resenas{
     display: flex;
     justify-content: space-between;
 }
@@ -374,7 +374,7 @@ article p{
     margin: 0px 8px 8px 0px;
 }
 
-.reseña{
+.resena{
     background-color: #20252a;
     margin: 10px;
     border-radius: 8px;
@@ -382,18 +382,18 @@ article p{
     color: #afaba1;
 }
 
-.form_reseñas{
+.form_resenas{
     display: flex;
 }
 
-.input_reseñas{
+.input_resenas{
     width: 400px;
     height: 40px;
     border-radius: 20px;
     border: 1px solid transparent;
 }
 
-.boton_enviar_reseñas{
+.boton_enviar_resenas{
     background-color: #20252a;
     color: #afaba1;
     border-radius: 10px;
@@ -570,7 +570,7 @@ article p{
         color: #1d1e1e;
     }
 
-    .producto_y_reseñas{
+    .producto_y_resenas{
         flex-direction: column;
     }
 
@@ -580,11 +580,11 @@ article p{
         margin: 10px 0px;
     }
 
-    .reseñas_seccion{
+    .resenas_seccion{
         margin: 10px 0px;
     }
 
-    .input_reseñas{
+    .input_resenas{
         width: 100%;
     }
     
@@ -592,7 +592,7 @@ article p{
         color: black;
     }
 
-    .titulo_reseñas_de_usuarios{
+    .titulo_resenas_de_usuarios{
         color: black;
     }
     .h2_search{
