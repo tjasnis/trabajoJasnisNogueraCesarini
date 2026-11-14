@@ -431,6 +431,19 @@ article p{
     margin:auto;
 
 }
+.saludo_usuario{
+    color: #040303;
+    border-radius: 5px;
+    font-size: 12px;
+
+}
+.btn_logout{
+    background-color: #1d1e1e;
+    color: #d4b15c;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 2px;
+}
 
 @media(max-width:480px){
     body{
