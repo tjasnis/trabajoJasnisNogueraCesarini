@@ -1,6 +1,6 @@
 let formRegister=document.querySelector(".form_register");
 let mailRegister=document.querySelector("#email_registro");
-let contraseñaRegister=document.querySelector("#contrasena_primera_vez");
+let contrasenaRegister=document.querySelector("#contrasena_primera_vez");
 let repetirRegister=document.querySelector("#repetir_contrasena");
 
 formRegister.addEventListener("submit", function(event){
