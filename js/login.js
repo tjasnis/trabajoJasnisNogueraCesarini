@@ -20,7 +20,7 @@ formularioLogin.addEventListener('submit', function(event) {
         return;
     }
 
-    localStorage.setItem('userEmail', campoEmail.value);
+    localStorage.setItem('EmailLogin', campoEmail.value);
     
     location.href = "./index.html";
 });
