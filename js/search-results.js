@@ -4,7 +4,7 @@ let seccion=document.querySelector(".categorias")
 let queryString=location.search
 let queryStringobj=new URLSearchParams(queryString)
 let search_results=queryStringobj.get("q")
-titulo_cat=document.querySelector(".h2_search")
+let titulo_cat=document.querySelector(".h2_search")
 let url_search_results=`https://dummyjson.com/products/search?q=${search_results}`
 let leyenda_search=document.querySelector(".leyenda_search")
 
