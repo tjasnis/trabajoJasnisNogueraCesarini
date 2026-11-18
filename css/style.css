@@ -430,6 +430,36 @@ article p{
     padding: 2px;
 }
 
+.error_mail_login{
+    color: red;
+    font-size: x-small;
+}
+
+.error_contrasena_login{
+    color: red;
+    font-size: x-small;
+}
+
+.error_email_registro{
+    color: red;
+    font-size: x-small;
+}
+
+.error_primer_contrasena_registro{
+    color: red;
+    font-size: x-small;
+}
+
+.error_repetir_contrasena_registro{
+    color: red;
+    font-size: x-small;
+}
+
+.terminos_error{
+    color: red;
+    font-size: x-small;
+}
+
 @media(max-width:480px){
     body{
         background-image: none;

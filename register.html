@@ -34,22 +34,22 @@
         
             <div><label for="email_registro" class="negrita">Email: </label></div>
             <input id="email_registro" class="input_register" type="email" name="email" value="" placeholder="ejemplo@algo.com">
+            <p class="error_email_registro"></p>
         
             <div><label for="contrasena_primera_vez"  class="negrita">Contraseña: </label></div>
             <input  id="contrasena_primera_vez"  class="input_register" type="password" name="contrasena" value="" placeholder="contraseña">
-        
+            <p class="error_primer_contrasena_registro"></p>
         
             <div><label for="repetir_contrasena" class="negrita">Repetir contraseña:</label></div>
             <input  id="repetir_contrasena"  class="input_register" type="password"  placeholder="contraseña" required > 
-
+            <p class="error_repetir_contrasena_registro"></p>
             <div>
                 <div>
                     <label  class="negrita">Términos y condiciones</label>
                 </div>
-                <input  id="acepto_terminos" type="radio" name="terminos" value="Acepto" > 
+                <input  id="acepto_terminos" type="checkbox" name="terminos" value="Acepto" > 
                 <label for="acepto_terminos">Acepto</label>
-                <input  id="no_acepto_terminos"  type="radio" name="terminos" value="No acepto"> 
-                <label  for="no_acepto_terminos">No acepto</label>
+                <p class="terminos_error"></p>
             </div>
         
         

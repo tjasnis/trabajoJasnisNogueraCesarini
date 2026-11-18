@@ -2,27 +2,26 @@ let formRegister=document.querySelector(".form_register");
 let mailRegister=document.querySelector("#email_registro");
 let contrasenaRegister=document.querySelector("#contrasena_primera_vez");
 let repetirRegister=document.querySelector("#repetir_contrasena");
-let noAceptoTerminos = document.querySelector("#no_acepto_terminos");
+let acepto_terminos = document.querySelector("#acepto_terminos");
 
 
 formRegister.addEventListener("submit", function(event){
     event.preventDefault();
 
     if (mailRegister.value==""){
-        alert("El campo email es obligatorio");
+        document.querySelector(".error_email_registro").innerText="El campo no puede estar vacio";
     }
     else if (contrasenaRegister.value==""){
-        alert("El campo contraseña es obligatorio");
+        document.querySelector(".error_primer_contrasena_registro").innerText="El campo no puede estar vacio";
     }
     else if (repetirRegister.value.length < 6){
-        alert("La contraseña debe tener al menos 6 caracteres");
+        document.querySelector(".error_repetir_contrasena_registro").innerText="La contraseña debe tener al menos 6 caracteres";
     }
-
     else if (contrasenaRegister.value!=repetirRegister.value){
-        alert("las contraseñas no coinciden")
+        document.querySelector(".error_repetir_contrasena_registro").innerText="Las contraseñas no coinciden";
     }
-    else if(noAceptoTerminos.checked){
-        alert("Debe aceptar los terminos")
+    else if(acepto_terminos.value!=true){
+        document.querySelector(".terminos_error").innerText="Debe aceptar los términos y condiciones"
     }
     else{
         this.submit()

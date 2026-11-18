@@ -6,21 +6,21 @@ formularioLogin.addEventListener('submit', function(event) {
     event.preventDefault();
 
     if (campoEmail.value == "") {
-        alert("El campo email es obligatorio.");
+        document.querySelector(".error_mail_login").innerText="El campo no puede estar vacio"
         return;
     }
 
-    if (campoPassword.value == "") {
-        alert("El campo contraseña es obligatorio.");
+    else if (campoPassword.value == "") {
+        document.querySelector(".error_contrasena_login").innerText="El campo no puede estar vacio"
         return;
     }
 
-    if (campoPassword.value.length < 6) {
-        alert("La contraseña debe tener al menos 6 caracteres.");
+    else if (campoPassword.value.length < 6) {
+        document.querySelector(".error_contrasena_login").innerText="La contraseña debe tener al menos 6 caracteres"
         return;
     }
 
-    localStorage.setItem('EmailLogin', campoEmail.value);
+    localStorage.setItem('userMail', campoEmail.value);
     
     location.href = "./index.html";
 });
