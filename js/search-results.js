@@ -4,8 +4,9 @@ let seccion=document.querySelector(".categorias")
 let queryString=location.search
 let queryStringobj=new URLSearchParams(queryString)
 let search_results=queryStringobj.get("q")
-titulo_cat=document.querySelector(".h2_search")
+let titulo_cat=document.querySelector(".h2_search")
 let url_search_results=`https://dummyjson.com/products/search?q=${search_results}`
+let leyenda_search=document.querySelector(".leyenda_search")
 
 fetch(url_lista_categorias)
      .then(function(response){
@@ -35,7 +36,7 @@ fetch(url_lista_categorias)
      .then(function(data){
          console.log(data);
          productos=data.products;
-        titulo_cat.innerText=`resultados para: "${search_results}"`
+        titulo_cat.innerText=`Resultados para: "${search_results}"`
          for (let i=0;i<productos.length;i++){
           
             seccion.innerHTML+=`
@@ -49,6 +50,12 @@ fetch(url_lista_categorias)
                     <a class="ver_detalle" href="./product.html?id=${productos[i].id}">Ver detalle</a>
             </article>
             `
+         }
+         if (productos.length==0){
+            leyenda_search.style.display="none"
+            titulo_cat.innerText=`No hay resultados para: ${search_results}`
+
+            
          }
 
 
