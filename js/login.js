@@ -1,6 +1,11 @@
 let formularioLogin = document.querySelector(".form_login");
 let campoEmail = document.querySelector("#email_login");
 let campoPassword = document.querySelector("#contrasena_login");
+let formulario=document.querySelector(".buscador");
+let campoBuscar=document.querySelector(".input_buscador");
+let mensajeError=document.querySelector(".error_caracteres");
+
+
 
 formularioLogin.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -24,3 +29,16 @@ formularioLogin.addEventListener('submit', function(event) {
     
     location.href = "./index.html";
 });
+ formulario.addEventListener("submit", function(event){
+        event.preventDefault()
+
+        if (campoBuscar.value==""){
+            mensajeError.innerText="El campo no puede estar vacio";
+        }
+        else if (campoBuscar.value.length < 3){
+            mensajeError.innerText="Debe escribir al menos 3 caracteres";
+        }
+        else{
+            this.submit()
+        }
+    });

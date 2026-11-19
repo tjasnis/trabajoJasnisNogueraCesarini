@@ -5,6 +5,9 @@ let queryStringobj=new URLSearchParams(queryString)
 let id=queryStringobj.get("id")
 let url_producto=`https://dummyjson.com/products/${id}`
 let producto_y_resenas=document.querySelector(".producto_y_resenas")
+let formulario=document.querySelector(".buscador")
+let campoBuscar=document.querySelector(".input_buscador")
+let mensajeError=document.querySelector(".error_caracteres")
 
 fetch(url_lista_categorias)
      .then(function(response){
@@ -86,3 +89,16 @@ fetch(url_producto)
      .catch(function(error){
          console.log('El error es: ' + error);
  	});
+     formulario.addEventListener("submit", function(event){
+        event.preventDefault()
+
+        if (campoBuscar.value==""){
+            mensajeError.innerText="El campo no puede estar vacio";
+        }
+        else if (campoBuscar.value.length < 3){
+            mensajeError.innerText="Debe escribir al menos 3 caracteres";
+        }
+        else{
+            this.submit()
+        }
+    });

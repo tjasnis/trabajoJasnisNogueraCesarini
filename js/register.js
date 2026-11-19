@@ -3,6 +3,9 @@ let mailRegister=document.querySelector("#email_registro");
 let contrasenaRegister=document.querySelector("#contrasena_primera_vez");
 let repetirRegister=document.querySelector("#repetir_contrasena");
 let acepto_terminos = document.querySelector("#acepto_terminos");
+let formulario=document.querySelector(".buscador");
+let campoBuscar=document.querySelector(".input_buscador");
+let mensajeError=document.querySelector(".error_caracteres");
 
 
 formRegister.addEventListener("submit", function(event){
@@ -32,3 +35,16 @@ formRegister.addEventListener("submit", function(event){
 
     }
 });
+ formulario.addEventListener("submit", function(event){
+        event.preventDefault()
+
+        if (campoBuscar.value==""){
+            mensajeError.innerText="El campo no puede estar vacio";
+        }
+        else if (campoBuscar.value.length < 3){
+            mensajeError.innerText="Debe escribir al menos 3 caracteres";
+        }
+        else{
+            this.submit()
+        }
+    });

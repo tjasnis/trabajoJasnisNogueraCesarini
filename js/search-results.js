@@ -7,6 +7,9 @@ let search_results=queryStringobj.get("q")
 let titulo_cat=document.querySelector(".h2_search")
 let url_search_results=`https://dummyjson.com/products/search?q=${search_results}`
 let leyenda_search=document.querySelector(".leyenda_search")
+let formulario=document.querySelector(".buscador")
+let campoBuscar=document.querySelector(".input_buscador")
+let mensajeError=document.querySelector(".error_caracteres")
 
 fetch(url_lista_categorias)
      .then(function(response){
@@ -14,7 +17,7 @@ fetch(url_lista_categorias)
  	})
      .then(function(data){
          console.log(data);
-         for (i=0;i<data.length;i++){
+         for (let i=0;i<data.length;i++){
             menu_vertical.innerHTML+=`
             <li class="categoria"><a href="./category.html?categoria=${data[i]}"> ${data[i]} </a></li>`
 
@@ -35,7 +38,7 @@ fetch(url_lista_categorias)
  	})
      .then(function(data){
          console.log(data);
-         productos=data.products;
+         let productos=data.products;
         titulo_cat.innerText=`Resultados para: "${search_results}"`
          for (let i=0;i<productos.length;i++){
           
@@ -65,3 +68,16 @@ fetch(url_lista_categorias)
      .catch(function(error){
          console.log('El error es: ' + error);
  	});
+    formulario.addEventListener("submit", function(event){
+        event.preventDefault()
+
+        if (campoBuscar.value==""){
+            mensajeError.innerText="El campo no puede estar vacio";
+        }
+        else if (campoBuscar.value.length < 3){
+            mensajeError.innerText="Debe escribir al menos 3 caracteres";
+        }
+        else{
+            this.submit()
+        }
+    });

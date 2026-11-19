@@ -6,6 +6,11 @@ let seccion_smartphones=document.querySelector(".seccion_aleatorias")
 let titulo_seccion1=document.querySelector(".titulo_seccion1")
 let titulo_seccion2=document.querySelector(".titulo_seccion2")
 let seccion_accessories=document.querySelector(".seccion_mas_vendidos")
+let formulario=document.querySelector(".buscador")
+let campoBuscar=document.querySelector(".input_buscador")
+let mensajeError=document.querySelector(".error_caracteres")
+
+
 
 
 
@@ -99,3 +104,17 @@ fetch(url_categoria_smartphones)
      .catch(function(error){
          console.log('El error es: ' + error);
  	});
+     formulario.addEventListener("submit", function(event){
+        console.log("entró al submit, valor:", campoBuscar.value);
+        event.preventDefault()
+
+        if (campoBuscar.value==""){
+            mensajeError.innerText="El campo no puede estar vacio";
+        }
+        else if (campoBuscar.value.length < 3){
+            mensajeError.innerText="Debe escribir al menos 3 caracteres";
+        }
+        else{
+            this.submit()
+        }
+    });
