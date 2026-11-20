@@ -4,6 +4,9 @@ let campoPassword = document.querySelector("#contrasena_login");
 let formularioBusqueda=document.querySelector(".buscador");
 let campoBuscar=document.querySelector(".input_buscador");
 let mensajeError=document.querySelector(".error_caracteres");
+let email_campo_vacio=document.querySelector(".error_mail_login")
+let contraseña_error=document.querySelector(".error_contrasena_login")
+
 
 
 
@@ -11,23 +14,24 @@ formularioLogin.addEventListener('submit', function(event) {
     event.preventDefault();
 
     if (campoEmail.value == "") {
-        document.querySelector(".error_mail_login").innerText="El campo no puede estar vacio"
-        return;
+        email_campo_vacio.innerText="El campo no puede estar vacio"
+        
     }
 
     else if (campoPassword.value == "") {
-        document.querySelector(".error_contrasena_login").innerText="El campo no puede estar vacio"
-        return;
+        contraseña_error.innerText="El campo no puede estar vacio"
+        
     }
 
     else if (campoPassword.value.length < 6) {
-        document.querySelector(".error_contrasena_login").innerText="La contraseña debe tener al menos 6 caracteres"
-        return;
+        contraseña_error.innerText="La contraseña debe tener al menos 6 caracteres"
+        
     }
     else{
-        this.submit()
+        
         localStorage.setItem('emailLogin', campoEmail.value);
-        location.href = "./index.html";        
+        location.href = "./index.html"; 
+        this.submit()       
     }
 });
 formularioBusqueda.addEventListener("submit", function(event){
@@ -43,3 +47,17 @@ formularioBusqueda.addEventListener("submit", function(event){
             this.submit()
         }
     });
+
+
+
+campoEmail.addEventListener("keydown", function(){
+    email_campo_vacio.innerText = "";
+});
+
+campoPassword.addEventListener("keydown", function(){
+    contraseña_error.innerText = "";
+});
+
+campoBuscar.addEventListener("keydown", function(){
+    mensajeError.innerText = "";
+});

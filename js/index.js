@@ -20,7 +20,7 @@ fetch(url_lista_categorias)
  	})
      .then(function(data){
          console.log(data);
-         for (i=0;i<data.length;i++){
+         for (let i=0;i<data.length;i++){
             menu_vertical.innerHTML+=`
             <li class="categoria"><a href="./category.html?categoria=${data[i]}"> ${data[i]} </a></li>`
 
@@ -41,15 +41,16 @@ fetch(url_categoria_smartphones)
  	})
      .then(function(data){
          console.log(data);
-         productos=data.products
+         let productos=data.products
          
          titulo_seccion1.innerText=`${productos[0].category}`
+         let todos_productos_smartphones=""
          for(let i=0;i<productos.length;i++){
-            seccion_smartphones.innerHTML+=
+            todos_productos_smartphones+=
             `
                      <article class="productos">
                         <a class="link_fotos_productos" href="./product.html?id=${productos[i].id}">
-                        <img class="fotos_productos" src=${productos[i].images[0]} alt="">
+                        <img class="fotos_productos" src=${productos[i].images[0]} alt="${productos[i].title}">
                         </a>
                         <h3> ${productos[i].title}</h3>
                         <p class="descripciones_remeras_index">${productos[i].description}</p>
@@ -58,9 +59,8 @@ fetch(url_categoria_smartphones)
                     </article>
             
             `
-
-
-         }
+            }
+        seccion_smartphones.innerHTML=todos_productos_smartphones
         
     
 
@@ -77,14 +77,15 @@ fetch(url_categoria_smartphones)
  	})
      .then(function(data){
          console.log(data);
-         productos=data.products
+         let productos=data.products
          titulo_seccion2.innerText=`${productos[0].category}`
+         let todos_productos_accessories=""
          for(let i=0;i<productos.length;i++){
-            seccion_accessories.innerHTML+=
+            todos_productos_accessories+=
             `
                      <article class="productos">
                         <a class="link_fotos_productos" href="./product.html?id=${productos[i].id}">
-                        <img class="fotos_productos" src=${productos[i].images[0]} alt="">
+                        <img class="fotos_productos" src=${productos[i].images[0]} alt="${productos[i].title}">
                         </a>
                         <h3> ${productos[i].title}</h3>
                         <p class="descripciones_remeras_index">${productos[i].description}</p>
@@ -96,6 +97,7 @@ fetch(url_categoria_smartphones)
 
 
          }
+         seccion_accessories.innerHTML=todos_productos_accessories
         
     
 
@@ -119,3 +121,7 @@ fetch(url_categoria_smartphones)
             this.submit()
         }
     });
+
+campoBuscar.addEventListener("keydown", function(){
+    mensajeError.innerText = "";
+});

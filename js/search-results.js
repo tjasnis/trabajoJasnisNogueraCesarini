@@ -40,23 +40,25 @@ fetch(url_lista_categorias)
          console.log(data);
          let productos=data.products;
         titulo_cat.innerText=`Resultados para: "${search_results}"`
+        let todos_productos_search_results=""
          for (let i=0;i<productos.length;i++){
           
-            seccion.innerHTML+=`
+            todos_productos_search_results+=`
             <article class="productos">
                     <a class="link_fotos_productos" href="./product.html?id=${productos[i].id}">
-                        <img class="fotos_productos" src=${productos[i].images[0]} alt="">
+                        <img class="fotos_productos" src=${productos[i].images[0]} alt="${productos[i].title}">
                     </a>
                     <h3>${productos[i].title}</h3>
                     <p class="descripciones_remeras_index">${productos[i].description}</p>
-                    <p class="precio">${productos[i].price}</p>
+                    <p class="precio">$${productos[i].price}</p>
                     <a class="ver_detalle" href="./product.html?id=${productos[i].id}">Ver detalle</a>
             </article>
             `
          }
+          seccion.innerHTML=todos_productos_search_results
          if (productos.length==0){
             leyenda_search.style.display="none"
-            titulo_cat.innerText=`No hay resultados para: ${search_results}`
+            titulo_cat.innerText=`No hay resultados para el termino : ${search_results}`
 
             
          }
@@ -81,3 +83,6 @@ fetch(url_lista_categorias)
             this.submit()
         }
     });
+campoBuscar.addEventListener("keydown", function(){
+    mensajeError.innerText = "";
+});

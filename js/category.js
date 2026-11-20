@@ -16,7 +16,7 @@ fetch(url_lista_categorias)
  	})
      .then(function(data){
          console.log(data);
-         for (i=0;i<data.length;i++){
+         for (let i=0;i<data.length;i++){
             menu_vertical.innerHTML+=`
             <li class="categoria"><a href="./category.html?categoria=${data[i]}"> ${data[i]} </a></li>`
 
@@ -37,12 +37,13 @@ fetch(url_lista_categorias)
      .then(function(data){
          console.log(data);
          productos=data.products;
-         for (let i=0;i<productos.length;i++){
-            titulo_cat.innerText=`${categoria}`
-            categorias.innerHTML+=`
+         let todos_productos=""
+         titulo_cat.innerText=`${categoria}`
+         for (let i=0;i<productos.length;i++){  
+            todos_productos+=`
             <article class="productos">
                     <a class="link_fotos_productos" href="./product.html?id=${productos[i].id}">
-                        <img class="fotos_productos" src=${productos[i].images[0]} alt="">
+                        <img class="fotos_productos" src=${productos[i].images[0]} alt="${productos[i].title}">
                     </a>
                     <h3>${productos[i].title}</h3>
                     <p class="descripciones_remeras_index">${productos[i].description}</p>
@@ -51,6 +52,7 @@ fetch(url_lista_categorias)
             </article>
             `
          }
+          categorias.innerHTML=todos_productos
 
 
 
@@ -72,3 +74,8 @@ fetch(url_lista_categorias)
             this.submit()
         }
     });
+
+
+campoBuscar.addEventListener("keydown", function(){
+    mensajeError.innerText = "";
+});

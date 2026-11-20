@@ -15,7 +15,7 @@ fetch(url_lista_categorias)
  	})
      .then(function(data){
          console.log(data);
-         for (i=0;i<data.length;i++){
+         for (let i=0;i<data.length;i++){
             menu_vertical.innerHTML+=`
             <li class="categoria"><a href="./category.html?categoria=${data[i]}"> ${data[i]} </a></li>`
 
@@ -39,7 +39,7 @@ fetch(url_producto)
          `
         <article class="producto_unico">
             
-            <img class="fotos_productos" src=${data.images[0]} alt="Camiseta Chacarita 2026">
+            <img class="fotos_productos" src="${data.images[0]}" alt="${data.title}">
                 
             <div class="remera">
                 <h3>${data.title}</h3>
@@ -61,17 +61,17 @@ fetch(url_producto)
         <div class="resenas_seccion">
                 <h2 class="titulo_resenas_de_usuarios">Reseñas de Usuarios</h2>
                 <div class="resena">               
-                    <p>${data.reviews[0].rating}/5<p>                   
+                    <p>${data.reviews[0].rating}/5</p>                   
                     <p class="usuario_resena"> ${data.reviews[0].reviewerName}  ${data.reviews[0].date} :</p>
                     <p>${data.reviews[0].comment}</p>
                 </div>    
                 <div class="resena">               
-                    <p>${data.reviews[1].rating}/5<p>                   
+                    <p>${data.reviews[1].rating}/5</p>                   
                     <p class="usuario_resena"> ${data.reviews[1].reviewerName }  ${data.reviews[1].date}: </p>
                     <p> ${data.reviews[1].comment}</p>
                 </div> 
                 <div class="resena">               
-                    <p>${data.reviews[2].rating}/5<p>                   
+                    <p>${data.reviews[2].rating}/5<7p>                   
                     <p class="usuario_resena"> ${data.reviews[2].reviewerName}  ${data.reviews[2].date} : </p>
                     <p> ${data.reviews[2].comment}</p>
                 </div> 
@@ -102,3 +102,7 @@ fetch(url_producto)
             this.submit()
         }
     });
+
+campoBuscar.addEventListener("keydown", function(){
+    mensajeError.innerText = "";
+}); 
