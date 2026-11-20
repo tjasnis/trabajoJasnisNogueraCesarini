@@ -32,7 +32,7 @@ formularioLogin.addEventListener('submit', function(event) {
  formulario.addEventListener("submit", function(event){
         event.preventDefault()
 
-        if (campoBuscar.value==""){
+        if (campoBuscar.value===""){
             mensajeError.innerText="El campo no puede estar vacio";
         }
         else if (campoBuscar.value.length < 3){

@@ -11,10 +11,10 @@ let mensajeError=document.querySelector(".error_caracteres");
 formRegister.addEventListener("submit", function(event){
     event.preventDefault();
 
-    if (mailRegister.value==""){
+    if (mailRegister.value===""){
         document.querySelector(".error_email_registro").innerText="El campo no puede estar vacio";
     }
-    else if (contrasenaRegister.value==""){
+    else if (contrasenaRegister.value===""){
         document.querySelector(".error_primer_contrasena_registro").innerText="El campo no puede estar vacio";
     }
     else if (repetirRegister.value.length < 6){
