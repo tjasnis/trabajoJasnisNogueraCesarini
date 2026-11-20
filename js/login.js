@@ -25,7 +25,7 @@ formularioLogin.addEventListener('submit', function(event) {
         return;
     }
 
-    localStorage.setItem('userMail', campoEmail.value);
+    localStorage.setItem('emailLogin', campoEmail.value);
     
     location.href = "./index.html";
 });

@@ -23,7 +23,7 @@ formRegister.addEventListener("submit", function(event){
     else if (contrasenaRegister.value!=repetirRegister.value){
         document.querySelector(".error_repetir_contrasena_registro").innerText="Las contraseñas no coinciden";
     }
-    else if(acepto_terminos.value!=true){
+    else if(!acepto_terminos.checked){
         document.querySelector(".terminos_error").innerText="Debe aceptar los términos y condiciones"
     }
     else{

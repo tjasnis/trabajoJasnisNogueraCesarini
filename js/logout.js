@@ -3,7 +3,7 @@ let botonLogout = document.querySelector(".btn_logout");
 if (botonLogout) {
     botonLogout.addEventListener('click', function(event) {
         event.preventDefault(); 
-        localStorage.removeItem('userEmail');
+        localStorage.removeItem('emailLogin');
         location.href = "./index.html";
     });
 }

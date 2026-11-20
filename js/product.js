@@ -37,28 +37,28 @@ fetch(url_producto)
          console.log(data);
          producto_y_resenas.innerHTML=
          `
-          <article class="producto_unico">
+        <article class="producto_unico">
             
-                <img class="fotos_productos" src=${data.images[0]} alt="Camiseta Chacarita 2026">
+            <img class="fotos_productos" src=${data.images[0]} alt="Camiseta Chacarita 2026">
                 
-                <div class="remera">
-                       <h3>${data.title}</h3>
-                            <p>${data.description}</p>
-                            <p class="precio">$${data.price}</p>
-                            <a class="categoria_producto" href="./category.html?categoria=${data.category}"> Categoria: ${data.category}</a>
-                            <p class="ultima">quedan ${data.stock} unidades</p>
+            <div class="remera">
+                <h3>${data.title}</h3>
+                    <p>${data.description}</p>
+                    <p class="precio">$${data.price}</p>
+                    <a class="categoria_producto" href="./category.html?categoria=${data.category}"> Categoria: ${data.category}</a>
+                    <p class="ultima">quedan ${data.stock} unidades</p>
                             
                   
-                </div>
+            </div>
 
-                <div class="tags">
-                    <a href="./category.html?categoria=${data.category}" class="tag">${data.tags[0]}</a>
-                    <a href="./category.html?categoria=${data.category}" class="tag">${data.tags[1]}</a>
-                </div>
+            <div class="tags">
+                <p class="tag">${data.tags[0]}</p>
+                <p class="tag">${data.tags[1]}</p>
+            </div>
             
                     
-            </article>
-            <div class="resenas_seccion">
+        </article>
+        <div class="resenas_seccion">
                 <h2 class="titulo_resenas_de_usuarios">Reseñas de Usuarios</h2>
                 <div class="resena">               
                     <p>${data.reviews[0].rating}/5<p>                   
@@ -70,7 +70,7 @@ fetch(url_producto)
                     <p class="usuario_resena"> ${data.reviews[1].reviewerName }  ${data.reviews[1].date}: </p>
                     <p> ${data.reviews[1].comment}</p>
                 </div> 
-                 <div class="resena">               
+                <div class="resena">               
                     <p>${data.reviews[2].rating}/5<p>                   
                     <p class="usuario_resena"> ${data.reviews[2].reviewerName}  ${data.reviews[2].date} : </p>
                     <p> ${data.reviews[2].comment}</p>

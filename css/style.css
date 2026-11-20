@@ -24,7 +24,10 @@ header{
     align-items: center;
 
 }
-
+main{
+    display: flex;
+}
+/* header */
 .logo{
     width: 100%;
 
@@ -32,7 +35,6 @@ header{
 .div_logo{
     width: 20%;
 }
-
 
 
 .buscador{
@@ -53,6 +55,8 @@ header{
     border: 1px solid transparent;
 
 }
+
+   
 .login_y_registro{
     align-self: flex-start;
 
@@ -73,6 +77,8 @@ header{
 }
 
 
+
+/* index, category, productos search results  */
 .titulo_articulos{
     margin: 5px 0px 0px 5px ;
     text-align: start;
@@ -83,32 +89,21 @@ header{
     justify-content: flex-start;
 }
 
-.productos_index{
-    width: 19%;
-    height: 540px;
-    margin: 20px 5px;
-    background-color: rgb(212, 213, 190) ;
-    padding: 5px;
-    border-radius: 8px;
-    border: 1px solid rgb(114, 111, 111);
-
-    
-    
-    
-}
-
-
-.fotos_productos{
-    width: 100%;
-    height: 250px;
-    border-radius: 10px;
-}
-
 .seccion_mas_vendidos{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+
+.fotos_productos{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
 
 
 .descripciones_remeras_index{
@@ -125,14 +120,29 @@ header{
     margin: 5px 0px;
 }
 
+.precio{
+    font-size: large;
+    font-weight: bold;
+    margin: 8px 0px 8px 0px;
+}
 
 
-main{
-    display: flex;
+.productos{
+    width: 19%;
+    height: 540px;
+    margin: 20px 5px;
+    background-color: rgb(212, 213, 190) ;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(114, 111, 111);
+   
 }
 
 
 
+
+
+/* login */
 
 .contenedor_login{
     display: flex;
@@ -151,11 +161,35 @@ main{
     border: 1px solid rgb(113, 113, 113);
     margin-top: 10px;
 }
+.input_login{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 70%;
+    margin-bottom: 5px;
+    height: 25px;
+}
+
+.boton_login{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px 7px;
+}
+
+.no_tengo_cuenta{
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #1d1e1e;
+    padding: 2px 7px;
+    font-size: small;
+    font-weight: 500;
+}
 form h2{
     text-decoration: underline;
 }
 
-
+/* register */
 .contenedor_register{
     display: flex;
     justify-content: center;
@@ -173,13 +207,7 @@ form h2{
     margin-top: 10px;
 
 }
-.input_login{
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 70%;
-    margin-bottom: 5px;
-    height: 25px;
-}
+
 .input_register{
     border: 1px solid black;
     border-radius: 5px;
@@ -188,11 +216,7 @@ form h2{
     height: 25px;
 
 }
-.boton_login{
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 2px 7px;
-}
+
 .boton_register{
     border: 1px solid black;
     border-radius: 5px;
@@ -200,16 +224,7 @@ form h2{
     margin-bottom: 5px;
     margin-top: 5px;
 }
-.no_tengo_cuenta{
-    background-color: #ffffff;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-top: 20px;
-    color: #1d1e1e;
-    padding: 2px 7px;
-    font-size: small;
-    font-weight: 500;
-}
+
 .ya_tengo_cuenta{
     background-color: #ffffff;
     border: 1px solid black;
@@ -223,6 +238,8 @@ form h2{
 .negrita{
     font-weight: bold;
 }
+
+/* footer */
 .redes{
     display: flex;
     justify-content: center;
@@ -244,6 +261,7 @@ footer{
     width: 20px;
     height: 20px;
 }
+/* aside */
 aside {
     width: 200px;
     background-color: #2b2b2b ;
@@ -269,6 +287,8 @@ aside li {
 .categoria{
     color: white;
     font-size: 18px;
+    margin: 5px 0px;
+
 
 }
 aside a {
@@ -280,6 +300,12 @@ aside a {
     border-radius: 5px;
 }
 
+
+/* producto unico */
+.producto_y_resenas{
+    display: flex;
+    justify-content: space-between;
+}
 .categorias{
     display: flex;
     flex-wrap: wrap;
@@ -289,11 +315,7 @@ aside a {
 article p{
     font-size: small;
 }
-.precio{
-    font-size: large;
-    font-weight: bold;
-    margin: 8px 0px 8px 0px;
-}
+
 
 .resenas_seccion {
     margin-top: 30px;
@@ -302,6 +324,8 @@ article p{
     background-color: rgb(229, 226, 222);
     max-height: fit-content;
     width: 80%;
+    border-radius: 8px;
+    border: 1px solid rgb(114, 111, 111);
 }
 .ultima{
     font-weight: bold;
@@ -310,8 +334,8 @@ article p{
 .categoria_producto{
     font-weight: 500;
     background-color: #000000;
-    border-radius: 3px;
-    padding: 2px;
+    border-radius: 10px;
+    padding: 7px;
     color: #e2b04c;
     margin-right: auto;
 }
@@ -328,39 +352,15 @@ article p{
     font-weight: bold;
 }
 
-.producto_y_resenas{
-    display: flex;
-    justify-content: space-between;
-}
+
 .producto_unico{
-    width: 50%;
-    height: 600px;
+    width: 100%;
+    height: fit-content;
     margin: 20px 5px;
-    background-color: rgb(212, 213, 190) ;
+    background-color: rgba(212, 213, 190, 0.599) ;
     padding: 5px;
     border-radius: 8px;
     border: 1px solid rgb(114, 111, 111);
-}
-
-
-.equipacion{
-    margin: 5px 0px;
-}
-
-.version{
-    margin: 5px 0px;
-}
-
-.temporada{
-    margin: 5px 0px;
-}
-
-.marca{
-    margin: 5px 0px;
-}
-
-.categoria{
-    margin: 5px 0px;
 }
 
 .tags{
@@ -388,17 +388,7 @@ article p{
 }
 
 
-
-
-
-.boton_enviar_resenas{
-    background-color: #20252a;
-    color: #afaba1;
-    border-radius: 10px;
-    width: 15%;
-    height: 40px;
-    border: 1px solid transparent;
-}
+/* search-results */
 .sin_resultados {
     border: 1px solid #ffeeba; 
     background-color: #fff3cd; 
@@ -416,12 +406,29 @@ article p{
     margin:auto;
 
 }
-.saludo_usuario{
-    color: #040303;
-    border-radius: 5px;
-    font-size: 12px;
 
+/* saludo y logout */
+.div_user {
+    width: 30px;
+    height: auto;
 }
+
+.foto_user {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.saludo_ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
 .btn_logout{
     background-color: #1d1e1e;
     color: #d4b15c;
@@ -430,34 +437,41 @@ article p{
     padding: 2px;
 }
 
+/* mensajes de error */
+
+.error_caracteres{
+        color: rgb(117, 0, 0);
+        font-size: small; 
+    }
+
 .error_mail_login{
-    color: red;
-    font-size: x-small;
+    color: rgb(94, 0, 0);
+    font-size: small;
 }
 
 .error_contrasena_login{
-    color: red;
-    font-size: x-small;
+    color: rgb(94, 0, 0);
+    font-size: small;
 }
 
 .error_email_registro{
-    color: red;
-    font-size: x-small;
+    color: rgb(94, 0, 0);
+    font-size: small;
 }
 
 .error_primer_contrasena_registro{
-    color: red;
-    font-size: x-small;
+    color: rgb(94, 0, 0);
+    font-size: small;
 }
 
 .error_repetir_contrasena_registro{
-    color: red;
-    font-size: x-small;
+    color: rgb(94, 0, 0);
+    font-size: small;
 }
 
 .terminos_error{
-    color: red;
-    font-size: x-small;
+    color: rgb(91, 0, 0);
+    font-size: small;
 }
 
 @media(max-width:480px){
@@ -514,6 +528,7 @@ article p{
         margin: 0px;
         width: 100%;
     }
+
     .logo{
         width: 300px;
         
@@ -550,7 +565,7 @@ article p{
         width: 100%;
 
     }
-    .productos_index{
+    .productos{
         width: 100%;
         padding: 20px;
         height: 510px;

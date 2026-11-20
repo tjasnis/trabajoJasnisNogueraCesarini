@@ -43,7 +43,7 @@ fetch(url_lista_categorias)
          for (let i=0;i<productos.length;i++){
           
             seccion.innerHTML+=`
-            <article class="productos_index">
+            <article class="productos">
                     <a class="link_fotos_productos" href="./product.html?id=${productos[i].id}">
                         <img class="fotos_productos" src=${productos[i].images[0]} alt="">
                     </a>
