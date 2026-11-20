@@ -42,6 +42,7 @@ fetch(url_categoria_smartphones)
      .then(function(data){
          console.log(data);
          productos=data.products
+         
          titulo_seccion1.innerText=`${productos[0].category}`
          for(let i=0;i<productos.length;i++){
             seccion_smartphones.innerHTML+=

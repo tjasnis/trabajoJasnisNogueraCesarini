@@ -3,7 +3,7 @@ let mailRegister=document.querySelector("#email_registro");
 let contrasenaRegister=document.querySelector("#contrasena_primera_vez");
 let repetirRegister=document.querySelector("#repetir_contrasena");
 let acepto_terminos = document.querySelector("#acepto_terminos");
-let formulario=document.querySelector(".buscador");
+let formularioBusqueda=document.querySelector(".buscador");
 let campoBuscar=document.querySelector(".input_buscador");
 let mensajeError=document.querySelector(".error_caracteres");
 
@@ -35,7 +35,7 @@ formRegister.addEventListener("submit", function(event){
 
     }
 });
- formulario.addEventListener("submit", function(event){
+ formularioBusqueda.addEventListener("submit", function(event){
         event.preventDefault()
 
         if (campoBuscar.value==""){
