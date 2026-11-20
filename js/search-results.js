@@ -56,7 +56,7 @@ fetch(url_lista_categorias)
             `
          }
           seccion.innerHTML=todos_productos_search_results
-         if (productos.length==0){
+         if (productos.length===0){
             leyenda_search.style.display="none"
             titulo_cat.innerText=`No hay resultados para el termino : ${search_results}`
 
@@ -73,7 +73,7 @@ fetch(url_lista_categorias)
     formulario.addEventListener("submit", function(event){
         event.preventDefault()
 
-        if (campoBuscar.value==""){
+        if (campoBuscar.value===""){
             mensajeError.innerText="El campo no puede estar vacio";
         }
         else if (campoBuscar.value.length < 3){

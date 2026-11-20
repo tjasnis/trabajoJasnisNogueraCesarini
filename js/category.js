@@ -36,7 +36,7 @@ fetch(url_lista_categorias)
  	})
      .then(function(data){
          console.log(data);
-         productos=data.products;
+         let productos=data.products;
          let todos_productos=""
          titulo_cat.innerText=`${categoria}`
          for (let i=0;i<productos.length;i++){  
@@ -47,7 +47,7 @@ fetch(url_lista_categorias)
                     </a>
                     <h3>${productos[i].title}</h3>
                     <p class="descripciones_remeras_index">${productos[i].description}</p>
-                    <p class="precio">${productos[i].price}</p>
+                    <p class="precio">$${productos[i].price}</p>
                     <a class="ver_detalle" href="./product.html?id=${productos[i].id}">Ver detalle</a>
             </article>
             `
@@ -64,7 +64,7 @@ fetch(url_lista_categorias)
      formulario.addEventListener("submit", function(event){
         event.preventDefault()
 
-        if (campoBuscar.value==""){
+        if (campoBuscar.value===""){
             mensajeError.innerText="El campo no puede estar vacio";
         }
         else if (campoBuscar.value.length < 3){

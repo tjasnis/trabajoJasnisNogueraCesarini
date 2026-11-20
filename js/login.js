@@ -13,12 +13,12 @@ let contraseña_error=document.querySelector(".error_contrasena_login")
 formularioLogin.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    if (campoEmail.value == "") {
+    if (campoEmail.value === "") {
         email_campo_vacio.innerText="El campo no puede estar vacio"
         
     }
 
-    else if (campoPassword.value == "") {
+    else if (campoPassword.value === "") {
         contraseña_error.innerText="El campo no puede estar vacio"
         
     }

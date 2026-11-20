@@ -111,7 +111,7 @@ fetch(url_categoria_smartphones)
         console.log("entró al submit, valor:", campoBuscar.value);
         event.preventDefault()
 
-        if (campoBuscar.value==""){
+        if (campoBuscar.value===""){
             mensajeError.innerText="El campo no puede estar vacio";
         }
         else if (campoBuscar.value.length < 3){

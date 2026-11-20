@@ -71,7 +71,7 @@ fetch(url_producto)
                     <p> ${data.reviews[1].comment}</p>
                 </div> 
                 <div class="resena">               
-                    <p>${data.reviews[2].rating}/5<7p>                   
+                    <p>${data.reviews[2].rating}/5</p>                   
                     <p class="usuario_resena"> ${data.reviews[2].reviewerName}  ${data.reviews[2].date} : </p>
                     <p> ${data.reviews[2].comment}</p>
                 </div> 
@@ -92,7 +92,7 @@ fetch(url_producto)
      formulario.addEventListener("submit", function(event){
         event.preventDefault()
 
-        if (campoBuscar.value==""){
+        if (campoBuscar.value===""){
             mensajeError.innerText="El campo no puede estar vacio";
         }
         else if (campoBuscar.value.length < 3){

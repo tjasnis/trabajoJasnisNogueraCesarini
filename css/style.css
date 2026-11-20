@@ -71,6 +71,9 @@ main{
 .registro{
     margin: 5px;
 }
+.home{
+    margin: 5px ;
+}
 
 .separador_login_register{
     color: rgb(79, 79, 203);

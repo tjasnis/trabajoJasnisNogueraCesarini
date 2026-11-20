@@ -22,15 +22,15 @@ formRegister.addEventListener("submit", function(event){
         campo_contraseña_vacio.innerText="El campo no puede estar vacio";
     }
     else if (contrasenaRegister.value.length<6 && contrasenaRegister.value.length>0){
-        campo_contraseña_vacio.innerText="la contraseña debe tener al menos 6 caracteres"
+        campo_contraseña_vacio.innerText="La contraseña debe tener al menos 6 caracteres"
     }
     else if (repetirRegister.value===""){
-        error_repetir_contraseña.innerText="el campo no puede estar vacio"
+        error_repetir_contraseña.innerText="El campo no puede estar vacio"
     }
     else if (repetirRegister.value.length < 6){
         error_repetir_contraseña.innerText="La contraseña debe tener al menos 6 caracteres";
     }
-    else if (contrasenaRegister.value!=repetirRegister.value){
+    else if (contrasenaRegister.value!==repetirRegister.value){
         error_repetir_contraseña.innerText="Las contraseñas no coinciden";
     }
     else if(!acepto_terminos.checked){
@@ -51,7 +51,7 @@ formRegister.addEventListener("submit", function(event){
  formularioBusqueda.addEventListener("submit", function(event){
         event.preventDefault()
 
-        if (campoBuscar.value==""){
+        if (campoBuscar.value===""){
             mensajeError.innerText="El campo no puede estar vacio";
         }
         else if (campoBuscar.value.length < 3){
